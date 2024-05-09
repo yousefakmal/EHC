@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <title>ticket</title>
+  <link rel="icon" href="{% static 'ff/ehc.png' %}" />
+  <link rel="stylesheet" href="{% static 'ff\ticket1.css' %}" />
+  
+</head>
+
+<body>
+  <div class="headd">
+    <img class="log-in-child" alt="" src="{% static 'ff/bbbbackground.png' %}" />
+    <img class="pic1" src="{% static 'ff/ehc.png' %}" alt="logo">
+    <a class="homebutton" href="{% url 'home'%}">Home</a>
+    
+    <a class="logout" href="{% url 'logout' %}" >Logout</a>
+  </div>
+
+  <div>
+    <p class="midtext">All Tickets</p>
+  </div>
+  
+  <div class="ticket-grid">
+    {% for item in tickets %}
+    <div class="ticket-item">
+      <p ><strong> Title:</strong> {{ item.name }}</p>
+      <p><strong> Date:</strong> {{ item.ticket_date }}</p>
+      <a class="Viewbutton" href="{% url 'ticket_detail' item.id %}">View</a>
+      <p class="Viewbutton2 {% if item.closed %}closed{% else %}open{% endif %}">
+        <span>{% if item.closed %}Closed{% else %}Open{% endif %}</span>
+    </p>
+      
+    </div>
+    {% endfor %}
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <title>Feedback Sent</title>
+    <link rel="stylesheet" href="{% static 'ff/feedbacksuccess.css' %}" />
+</head>
+
+<body>
+    <div class="headd">
+        <img class="log-in-child" alt="" src="{% static 'ff/bbbbackground.png' %}" />
+        <img class="pic1" src="{% static 'ff/ehc.png' %}" alt="logo">
+        <a class="homebutton" href="{% url 'home'%}">Home</a>
+      </div>
+      <div class="clear">
+        <a class="logout" href="{% url 'logout' %}" >Logout</a>
+        <a class="All-Files" href="{% url 'ticket'%}">Tickets</a>
+        
+      </div>
+
+    <div class="container">
+        <h1>Feedback Sent Successfully</h1>
+        <p>Thank you for your feedback!</p>
+        <a class="button" href="{% url 'home' %}">Return to Home</a>
+    </div>
+</body>
+
+</html>

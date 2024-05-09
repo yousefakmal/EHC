@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'ff/Register_.css' %}"> 
+  <title>Page Title</title>
+</head>
+<body>
+  <!--===================================================================-->
+  <div class="headd">
+     
+    <img class="log-in-child" alt="" src="{% static 'ff/bbbbackground.png'%}" />
+    <img class="pic1" src="{% static 'ff/ehc.png'%}" alt="logo">
+</div>
+  <div class="mid-text">
+    <p class="welcome">Welcome in ElectraHelp Center</p>
+    <p class="welcome2">Sign up</p>
+    <p class="welcome3">Create new accout</p>
+  </div>
+  
+  <!--===================================================================-->
+  <div class="signup">
+    <form action="#" method="POST">
+      {% csrf_token %}
+      <div class="input-box">
+        {{ form.username }}
+      </div>
+
+      <div class="input-box">
+        {{ form.email }}
+      </div>
+
+      <div class="input-box">
+        {{ form.password }}
+      </div>
+
+      <div class="input-box">
+        {{ form.PhoneNumber }}
+      </div>
+
+      <button type="submit" class="btn">Register</button>
+    </form>
+
+    <div class="have_account">
+      <p>Already have an account?</p>
+      <a href="{% url 'login' %}">Log in</a>
+    </div>
+  </div>
+
+
+</body>
+</html>

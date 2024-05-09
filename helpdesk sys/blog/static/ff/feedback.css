@@ -1,0 +1,216 @@
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  
+    background: #ffffff;
+    border-radius: 0px 0px 60px 60px;
+  }
+  
+  .log-in-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Header styles */
+  .headd {
+    padding-top: 1%;
+    padding-left: 1%;
+    align-items: start;
+  
+  }
+  
+  /* Logo styles */
+  .pic1 {
+    position: absolute;
+    width: 150px;
+  }
+  .homebutton
+  {
+    color: #656B79;;
+    position: absolute;
+  top:5%;
+    margin-left: 12%;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  .homebutton:hover {
+    color: #9dbaff;
+  }
+  .userwelcome {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+  }
+  .user {
+  
+    color: black;
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 61px;
+    position: absolute;
+    right: 18%;
+    top: 1%;
+  
+  }
+  .logout {position: absolute;
+    color: #656B79;
+    top:5%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 61px;
+    position: absolute;
+    right: 110px;
+    text-decoration: none;
+  }
+  
+  .logout:hover {
+    color: #9dbaff;
+  }
+  
+  .All-Files {
+    text-decoration: none;
+    top: 91px;
+    right: 117px;
+    position: absolute;
+    font-size: 25px;
+    color: #656B79;
+  }
+  
+  .All-Files:hover {
+    text-decoration: underline;
+  }
+  
+  .midtext {
+    text-align: center;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .text {
+    position: absolute;
+    margin-top: 5%;
+  }
+  
+  .smoltext {
+  
+    font-size: 70px;
+    text-align: center;
+  
+    color: #000000;
+  }
+  
+  
+  
+  .logoutbutton {
+    display: block;
+    position: absolute;
+    top: 70px;
+  
+    left: 90%;
+  
+    text-align: center;
+  
+  }
+  
+  .Ticket_name {
+    position: relative;
+  
+    font-size: 20px;
+    background: #E9E5FF;
+    width: 700px;
+    ;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+  
+  }
+  
+  .Ticket {
+    position: relative;
+  
+    font-size: 20px;
+    background: #E9E5FF;
+    width: 700px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .hamada {
+    align-items: center;
+    width: 50%;
+    height: 300px;
+    margin-top: 20%;
+  }
+  
+  button {
+    background: #5d6fb8;
+    border-color: #000000;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+    align-self: center;
+  
+  }
+  
+  button:hover {
+    background-color: #101b48;
+  }
+  
+  .Cancel {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-left: 10%;
+    background: #8a8a8a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .Cancel:hover {
+    background-color: #101b48;
+  }
+  .bigbox{
+    width: 30px;
+    height: 120px;
+}
+input[type="text"],
+input[type="hidden"],
+input[type="email"] {
+  position: relative;
+  font-size: 16px;
+  background-color: #E9E5FF;
+  width: 90%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 0px;
+  align-items: center;
+
+}
