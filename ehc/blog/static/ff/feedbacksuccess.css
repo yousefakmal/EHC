@@ -1,0 +1,107 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.log-in-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Header styles */
+  .headd {
+    padding-top: 1%;
+    padding-left: 1%;
+    align-items: start;
+  
+  }
+  
+  /* Logo styles */
+  .pic1 {
+    position: absolute;
+    width: 150px;
+  }
+  .homebutton
+  {
+    color: #656B79;;
+    position: absolute;
+  top:5%;
+    margin-left: 12%;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  .homebutton:hover {
+    color: #9dbaff;
+  }
+  .userwelcome {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+  }
+  .user {
+  
+    color: black;
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 61px;
+    position: absolute;
+    right: 18%;
+    top: 1%;
+  
+  }
+  .logout {position: absolute;
+    color: #656B79;
+    top:5%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 61px;
+    position: absolute;
+    right: 110px;
+    text-decoration: none;
+  }
+  
+  .logout:hover {
+    color: #9dbaff;
+  }
+  
+/* Container styles */
+.container {position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+
+    left: 35%;
+    padding: 20px;
+
+    text-align: center; /* Center the content */
+}
+.container p {
+    margin-bottom: 40px;
+}
+.button {
+
+    background: #5d6fb8;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+    align-self: center; /* Center the button vertically */
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background-color: #101b48;
+  }

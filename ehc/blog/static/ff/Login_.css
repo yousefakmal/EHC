@@ -1,0 +1,152 @@
+/* General styles */
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  
+    font-family: Arial, sans-serif;
+  
+}
+.log-in-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Header styles */
+.headd {
+  padding-top: 1%;
+  padding-left: 1%;
+  align-items: start;
+
+}
+
+/* Logo styles */
+.pic1 {
+  position: absolute;
+  width: 150px;
+}
+.mid-text{
+  position: absolute;
+  left: 50%;
+
+  transform: translate(-50%, 90%);
+  text-align: center;
+  margin: 0;
+}
+/* Welcome message styles */
+.welcome {
+  
+  color: rgb(0, 0, 0);
+  /* font-family: 'Koulen', sans-serif; */
+  font-size: 48px;
+  margin: 0;
+}
+.welcome2 {
+  color: rgb(0, 0, 0);
+  /* font-family: 'Koulen', sans-serif; */
+  font-size: 84px;
+  margin: 0;
+
+}
+
+/* Login form styles */
+.Login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -10%);
+  width: 500px;
+  height: 330px;
+
+  border: 1px solid #FFFFFF;
+  justify-content: center;
+  /* border-radius: 25px 25px 0px 0px;*/
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form label styles */
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+/* Form input styles */
+input[type="text"],
+input[type="password"] {
+  font-size: 20px;
+  background-color: #E9E5FF;
+  width: 350px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+/* Submit button styles */
+button {
+  position: relative
+  ;
+  left: 34%;
+  background: #5d6fb8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+  align-self: center; /* Center the button vertically */
+}
+
+button:hover {
+  background-color: #101b48;
+}
+
+/* "Don't have an account?" section styles */
+.forget {
+
+ align-items: center;
+justify-content: center;
+
+
+}
+
+.forget p {
+
+  display: block;
+  align-content: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+.forget a {
+  display: block;
+  align-content: center; display: block;
+  align-content: center;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  color: #7C8B91;
+}
+
+/* Additional image styles */
+
+
+
+/* Error message styles */
+.error {
+  position: absolute;
+  bottom: 10px;
+  color: rgb(255, 127, 127);
+}

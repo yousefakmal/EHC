@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+
+  <link rel="stylesheet" href="{% static 'ff/problem1.css' %}" />
+</head>
+<body>
+  <div class="problem">
+    <img class="problem-child" alt="" src="{% static 'ff/vector-4.svg' %}" />
+    <img class="problem-item" alt="" src="{% static 'ff/bbbbackground.png' %}" />
+    <div class="problem-inner"></div>
+    <img class="ehc-2-icon3" alt="" src="{% static 'ff/ehc.png' %}" />
+    <div class="group-div">
+      <div class="group-inner"></div>
+      <div class="home7" id="homeContainer">
+        <b class="home8">HOME</b>
+      </div>
+      <div class="sign-up10" id="signUpContainer">
+        <b class="sign-up11" id="signUpText">sign up</b>
+      </div>
+      <div class="log-in10" id="logInContainer">
+        <b class="log-in11" data-scroll-to="logInText">log in</b>
+      </div>
+      <img class="ehc-1-icon3" alt="" src="{% static 'ff/ehc.png' %}" />
+    </div>
+    <div class="choose-your-problem">Choose your problem in</div>
+    <div class="welcome-to-electrahelp">Welcome To ElectraHelp Center</div>
+    <img class="problem-child1" alt="" src="{% static 'ff/software.png' %}" />
+    <img class="problem-child2" alt="" src="{% static 'ff/hardware.png' %}" />
+    <div class="hardware" id="hardwareContainer">
+      <b class="hardware1">HardWare</b>
+    </div>
+    <div class="software" id="softwareContainer">
+      <b class="hardware1">SoftWare</b>
+    </div>
+  </div>
+
+  <script>
+    var homeContainer = document.getElementById("homeContainer");
+    if (homeContainer) {
+      homeContainer.addEventListener("click", function (e) {
+        window.location.href = "./home.html";
+      });
+    }
+    
+    var signUpText = document.getElementById("signUpText");
+    if (signUpText) {
+      signUpText.addEventListener("click", function (e) {
+        window.location.href = "./sign-up.html";
+      });
+    }
+    
+    var signUpContainer = document.getElementById("signUpContainer");
+    if (signUpContainer) {
+      signUpContainer.addEventListener("click", function (e) {
+        window.location.href = "./sign-up.html";
+      });
+    }
+    
+    var logInContainer = document.getElementById("logInContainer");
+    if (logInContainer) {
+      logInContainer.addEventListener("click", function () {
+        var anchor = document.querySelector("[data-scroll-to='logInText']");
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+        }
+      });
+    }
+    
+    var hardwareContainer = document.getElementById("hardwareContainer");
+    if (hardwareContainer) {
+      hardwareContainer.addEventListener("click", function (e) {
+        window.location.href = "{% url 'CreateTicket'%}";
+      });
+    }
+    
+    var softwareContainer = document.getElementById("softwareContainer");
+    if (softwareContainer) {
+      softwareContainer.addEventListener("click", function (e) {
+        window.location.href = "{% url 'user_chat'%}";
+      });
+    }
+  </script>
+</body>
+</html>

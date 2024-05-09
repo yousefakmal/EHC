@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'ff/Login_.css' %}">
+
+
+  
+  <title>Page Title</title>
+</head>
+
+<body>
+  <div class="body">
+
+
+    <!--===================================================================-->
+    <div class="headd">
+     
+          <img class="log-in-child" alt="" src="{% static 'ff/bbbbackground.png' %}" />
+          <img class="pic1" src="{% static 'ff/ehc.png' %}" alt="logo">
+    </div>
+    <!-- ========================================================== -->
+    <div class="mid-text">
+      <p class="welcome">Welcome in ElectraHelp Center</p>
+      <p class="welcome2">Login</p>
+    </div>
+    <!--===================================================================-->
+    <div class="Login">
+      {% if error_message %}
+    <p class="error">{{ error_message }}</p>
+    {% endif %}
+      <form class="form" method="post">
+       {% csrf_token %}
+       {{ form.as_p }} 
+        <button type="submit">Login</button>
+      </form>
+
+      <!--===================================================================-->
+      <div class="forget">
+        <p>Don’t have an account? </p>
+        <a href="{% url 'register'%}">Sign up</a>
+      </div>
+      <!--===================================================================-->
+    </div>
+    
+    <!--===================================================================-->
+
+  </div>
+</body>
+
+</html>

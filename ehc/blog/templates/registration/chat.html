@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="{% static 'ff/chat.css' %}" />
+</head>
+
+<body>
+    <div class="headd">
+        <img class="log-in-child" alt="" src="{% static 'ff/bbbbackground.png' %}" />
+        <img class="pic1" src="{% static 'ff/ehc.png' %}" alt="logo">
+        <a class="homebutton" href="{% url 'CreateTicket'%}">Home</a>
+
+        <a class="logout" href="{% url 'logout' %}">Logout</a>
+    </div>
+
+    <h1>Chat</h1>
+    <div class="chat">
+        <div id="chat-box">
+            <div class="top">
+                <img style="position: absolute; width: 50px;margin: 2px;border-radius: 50%;"
+                    src="{% static 'ff/user.jpg' %}" alt="">
+                <p>ADMIN</p>
+                <a href="{% url 'CreateTicket'%}">CreateTicket</a>
+                <p class="online">• Online</p>
+            </div>
+            {% for message in messages %}
+            <div style="display: flex;">
+                <img style=" width: 50px; height: 50px; margin: 2px;border-radius: 50%;"
+                    src="{% static 'ff/user.jpg' %}" alt="">
+                <div class="message">
+
+                    {{ message.Message }}
+                    <p class="Date"> {{ message.Message_date }}</p>
+                </div>
+            </div>
+            {% if message.Response %}
+            <div class="response">
+
+                {{ message.Response }}
+                <p class="Date2"> {{ message.Message_date }}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <form class="Send" method="post">
+            <hr>
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Send</button>
+    </div>
+    </div>
+    </form>
+    <script>
+        window.onload = function () {
+            var chatBox = document.getElementById('chat-box');
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <title>Feedback</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="icon" href="{% static 'ff/ehc.png' %}" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" />
+  <link rel="stylesheet" href="{% static 'ff/feedback.css' %}" />
+</head>
+
+<body>
+  <div class="headd">
+    <img class="log-in-child" alt="" src="{% static 'ff/bbbbackground.png' %}" />
+    <img class="pic1" src="{% static 'ff/ehc.png' %}" alt="logo">
+    <a class="homebutton" href="{% url 'home'%}">Home</a>
+  </div>
+  <div class="clear">
+    <a class="logout" href="{% url 'logout' %}" >Logout</a>
+    <a class="All-Files" href="{% url 'ticket'%}">Tickets</a>
+    
+  </div>
+  <div class="midtext">
+    <div class="text">
+        <p class="smoltext">Feedback</p>
+    </div>
+    <div class="hamada">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div style="margin-top:2%">
+                <button class="submit" type="submit">Send</button>
+                <a class="Cancel" href="{% url 'home' %}">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+  </header>
+
+  <script src="https://kit.fontawesome.com/be6d07397f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

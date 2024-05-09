@@ -1,0 +1,148 @@
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.log-in-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Header styles */
+.headd {
+  padding-top: 1%;
+  padding-left: 1%;
+  align-items: start;
+
+}
+
+/* Logo styles */
+.pic1 {
+  position: absolute;
+  width: 150px;
+}
+
+.mid-text {
+  position: absolute;
+  left: 50%;
+
+  transform: translate(-50%, 90%);
+  text-align: center;
+  margin: 0;
+}
+
+.welcome {
+
+  color: rgb(0, 0, 0);
+  /* font-family: 'Koulen', sans-serif; */
+  font-size: 48px;
+  margin: 0;
+
+  text-align: center;
+}
+
+.welcome2 {
+  color: rgb(0, 0, 0);
+  /* font-family: 'Koulen', sans-serif; */
+  font-size: 84px;
+  margin: 0;
+}
+
+.welcome3 {
+  font-size: 42px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.signup {
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  height: 30%;
+  left: 50%;
+  top: 50%;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -30%);
+
+}
+
+label {
+  top: 20%;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  position: relative;
+  font-size: 20px;
+  background-color: #E9E5FF;
+  width: 400px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  align-items: center;
+
+}
+
+button {
+  background: #5d6fb8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #101b48;
+}
+
+input[type="submit"]:hover {
+  background-color: #006f94;
+}
+
+.have_account {
+
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.have_account p {
+
+  display: block;
+  align-content: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+.have_account a {
+  display: block;
+  align-content: center;
+  display: block;
+  align-content: center;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  color: #7C8B91;
+}

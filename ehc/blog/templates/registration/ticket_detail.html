@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <title>Ticket Detail</title>
+  <link rel="icon" href="{% static 'ff/ehc.png' %}" />
+  <link rel="stylesheet" href="{% static 'ff\ticket_detail.css' %}" />
+</head>
+
+<body>
+  <div class="headd">
+    <img class="log-in-child" alt="" src="{% static 'ff/bbbbackground.png' %}" />
+    <img class="pic1" src="{% static 'ff/ehc.png' %}" alt="logo">
+    <a class="homebutton" href="{% url 'home'%}">Home</a>
+  </div>
+  <div class="clear">
+    <a class="logout" href="{% url 'logout' %}">Logout</a>
+    <a class="All-Files" href="{% url 'ticket'%}">Tickets</a>
+    
+  </div>
+  <p class="details">Ticket Details</p>
+  
+  <div class="ticket">
+    <p class="Tilte"><strong>Tilte:</strong> {{ ticket.name }}</p>
+    <div>
+      <p class="width"><strong>Content:</strong> {{ ticket.ticket }}</p>
+      <p class="Viewbutton2 {% if ticket.closed %}closed{% else %}open{% endif %}">
+        <span>{% if ticket.closed %}
+            Closed
+        {% else %}
+            Open
+        {% endif %}</span>
+    </p>
+
+  ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+      <p class="width"><strong>Answer:</strong> {{ ticket.answer }}</p>
+
+
+      <!-- Add more details as needed -->
+    </div>
+  </div>
+
+</body>
+
+</html>

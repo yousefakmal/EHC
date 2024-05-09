@@ -1,0 +1,132 @@
+body{
+    font-family: Arial, sans-serif;
+  }
+  .log-in-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Header styles */
+  .headd {
+    padding-top: 1%;
+    padding-left: 1%;
+    align-items: start;
+  
+  }
+  
+  /* Logo styles */
+  .pic1 {
+    position: absolute;
+    width: 150px;
+  }
+  .homebutton
+  {
+    color: #656B79;;
+    position: absolute;
+  top:5%;
+    margin-left: 12%;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  .homebutton:hover {
+    color: #9dbaff;
+  }
+  .userwelcome {
+    color: #000000;
+    font-size: 20px;
+    position: absolute;
+  }
+  .user {
+  
+    color: black;
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 61px;
+    position: absolute;
+    right: 18%;
+    top: 1%;
+  
+  }
+  .logout {position: absolute;
+    color: #656B79;
+    top:5%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 61px;
+    position: absolute;
+    right: 110px;
+    text-decoration: none;
+  }
+  
+  .logout:hover {
+    color: #9dbaff;
+  }
+  
+.details{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    left: 45%;
+    top: 10%;
+}
+  .ticket
+  {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    text-align: start;
+    left: 20%;
+    top: 30%;
+    align-items: start;
+
+  }
+    .ticket div {
+    padding: 10px;
+    background-color: #E9E5FF;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    text-align: start;
+  }
+  .Tilte{
+    padding: 10px;
+    background-color: #E9E5FF;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    text-align: start;
+    font-size: 30px;
+    
+  }
+
+  .width
+  {
+    width: 70%;
+  }
+  .Viewbutton2 {
+    padding: 10px;
+    border: 1px solid #000000; 
+
+    border-radius: 10px;
+    background-color: #9dbaff;
+    text-decoration: none;
+    position: absolute;
+    left: 80%;
+    margin-top: -3%;
+    color: rgb(255, 255, 255);
+}
+
+.Viewbutton2.closed {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.Viewbutton2.open {
+    color: white;
+    background-color: green;
+    border-color: green;
+}

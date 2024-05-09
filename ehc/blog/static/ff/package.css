@@ -1,0 +1,206 @@
+.frame-child8 {
+    width: 200px;
+    position: relative;
+    border-radius: var(--br-31xl);
+    height: 200px;
+    object-fit: cover;
+  }
+  .package-inner {
+    position: absolute;
+    top: 491px;
+    left: -830px;
+    border-radius: var(--br-31xl);
+    background-color: var(--color-lavender);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    width: 209px;
+    height: 208px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+  .package-child,
+  .package-child1,
+  .package-item {
+    position: absolute;
+    top: -100px;
+    left: -105px;
+    width: 1572.5px;
+    height: 513.3px;
+  }
+  .package-child1,
+  .package-item {
+    top: -60px;
+
+  }
+  .package-child1 {
+    top: 909px;
+    left: -12px;
+    background-color: lavender;
+    width: 1463px;
+    height: 81px;
+  }
+  .ehc-2-icon6 {
+    position: absolute;
+    top: 909px;
+    left: calc(50% - 84px);
+    width: 168px;
+    height: 79px;
+    object-fit: cover;
+  }
+  .group-child4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lavender;
+    width: 1440px;
+    height: 74px;
+  }
+  .home16 {
+    position: relative;
+    letter-spacing: 0.1em;
+  }
+  .home15 {
+    position: absolute;
+    top: 16px;
+    left: 172px;
+    border-radius: var(--br-xl);
+    width: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-3xs) 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .sign-up18,
+  .sign-up19 {
+    position: relative;
+    cursor: pointer;
+  }
+  .sign-up18 {
+    position: absolute;
+    top: 16px;
+    left: 1210px;
+    border-radius: var(--br-xl);
+    width: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-3xs) 0;
+    box-sizing: border-box;
+  }
+  .log-in19 {
+    position: relative;
+  }
+  .log-in18 {
+    position: absolute;
+    top: 16px;
+    left: 1299px;
+    border-radius: var(--br-xl);
+    width: 53px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-3xs) 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .ehc-1-icon7 {
+    position: absolute;
+    top: 1px;
+    left: 52px;
+    width: 113px;
+    height: 53px;
+    object-fit: cover;
+  }
+  .rectangle-parent4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 74px;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-lightslategray);
+  }
+  .pay-2-icon {
+    position: absolute;
+    top: 204px;
+    left: calc(50% - 623px);
+    border-radius: var(--br-3xs);
+    width: 1246px;
+    height: 565px;
+    object-fit: cover;
+  }
+  .start-trial {
+    width: 164px;
+    position: relative;
+    font-weight: 200;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  .start-trial-wrapper {
+    left: 1001px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-black);
+    width: 207px;
+  }
+  .start-trial-container,
+  .start-trial-frame,
+  .start-trial-wrapper {
+    position: absolute;
+    top: 660px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-3xs);
+    cursor: pointer;
+    border: 1px solid gray;
+  }
+  .start-trial-container {
+    left: 618px;
+    background: linear-gradient(90deg, #152157, #2e48bd);
+    width: 207px;
+    color: var(--color-white);
+  }
+  .start-trial-frame {
+    left: 236px;
+    background-color: white;
+    border: 1px solid gray;
+    width: 206px;
+  }
+  .choose-your-package {
+    position: absolute;
+    top: 80px;
+    left: calc(50% - 325px);
+    font-size: 64px;
+    font-weight: 200;
+    color: var(--color-black);
+    text-align: left;
+    display: inline-block;
+    width: 650px;
+    height: 90px;
+    
+  }
+  .package {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 990px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-5xl);
+    color: var(--color-dimgray);
+    font-family: var(--font-inter);
+  }
+  
